@@ -1,0 +1,24 @@
+
+<html>
+  <head>
+
+<style>
+var angle = document.getElementById("angle"); var angleValue = angle.value; var rocket = document.getElementById("rocket"); var rocketValue = rocket.value; var d = Math.floor(Math.random() * 100); rocket.style.display = "block"; rocket.style.top = "0px"; rocket.style.left = "0px"; rocket.style.height = "100px"; rocket.style.width = "100px"; rocket.style.border = "2px solid white"; rocket.style.background = "red"; rocket.style.color = "white"; rocket.style.transform = "rotate(" + angleValue + "deg)"; rocket.style.transformOrigin = "50% 50%"; angle.onchange = function() { if (angleValue >= 0 && angleValue <= 360) { rocket.style.display = "block"; rocket.style.top = "0px"; rocket.style.left = "0px"; rocket.style.height = "100px"; rocket.style.width = "100px"; rocket.style.border = "2px solid white"; rocket.style.background = "red"; rocket
+</style>
+</head>
+  
+  <body>
+    
+    <img id="rocket" src="rocket.png">
+    
+    
+    
+    <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+    
+  </body>
+  
+  
